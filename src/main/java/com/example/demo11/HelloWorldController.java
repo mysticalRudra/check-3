@@ -9,8 +9,9 @@ import org.springframework.web.servlet.ModelAndView;
 public class HelloWorldController {
 
 	@GetMapping("/hello")
-	public void start(){
+	public String start(){
 		System.out.println("From controller..");
+		return "Hello, this is a message from the API!";
 	}
 //	public ModelAndView showMessage(
 //			@RequestParam(value = "name", required = false, defaultValue = "World") String name) {
